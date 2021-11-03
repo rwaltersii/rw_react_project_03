@@ -1,18 +1,21 @@
 import classes from "./EmployeeItem.module.css";
 import Card from "../ui/Card";
+import img from "../../images/humanheadimage.png";
 
 function EmployeeItem(props) {
   return (
     <li className={classes.item}>
       <Card>
         <div className={classes.image}>
-          <img src={props.image} alt={props.name} />
+          <img src={img} alt="" />
         </div>
         <div className={classes.content}>
           <h3>{props.name}</h3>
+          <p>{props.badge}</p>
           <p>{props.position}</p>
         </div>
         <div className={classes.actions}>
+          <button>Add</button>
           <button>Edit</button>
           <button>Remove</button>
         </div>

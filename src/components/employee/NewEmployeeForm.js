@@ -5,19 +5,19 @@ import classes from "./NewEmployeeForm.module.css";
 
 function NewEmployeeForm(props) {
   const nameInputRef = useRef();
-  const imageInputRef = useRef();
+  const badgeInputRef = useRef();
   const positionInputRef = useRef();
 
   function submitHandler(event) {
     event.preventDefault();
 
     const enteredName = nameInputRef.current.value;
-    const enteredImage = imageInputRef.current.value;
+    const enteredBadge = badgeInputRef.current.value;
     const enteredPosition = positionInputRef.current.value;
 
     const employeeData = {
       name: enteredName,
-      image: enteredImage,
+      badge: enteredBadge,
       position: enteredPosition,
     };
     props.onAddEmployee(employeeData);
@@ -31,8 +31,8 @@ function NewEmployeeForm(props) {
           <input type="text" required id="name" ref={nameInputRef} />
         </div>
         <div className={classes.control}>
-          <label htmlFor="image">Photo URL</label>
-          <input type="url" required id="image" ref={imageInputRef} />
+          <label htmlFor="badge">Badge Number</label>
+          <input type="text" required id="badge" ref={badgeInputRef} />
         </div>
         <div className={classes.control}>
           <label htmlFor="position">Position</label>

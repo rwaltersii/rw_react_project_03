@@ -1,5 +1,11 @@
 .list {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
   margin: 0;
   padding: 0;
+  width: 1475px;
+  flex-wrap: wrap;
+  justify-content: center;
 }

@@ -8,10 +8,10 @@ function EmployeeList(props) {
         <EmployeeItem
           key={employee.id}
           id={employee.id}
-          image={employee.image}
           name={employee.name}
+          badge={employee.badge}
           position={employee.position}
-        />
+        ></EmployeeItem>
       ))}
     </ul>
   );

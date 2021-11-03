@@ -37,7 +37,8 @@ function AllEmployees() {
   }
   return (
     <section>
-      <h1>Employee Page</h1>
+      <h1>Employees</h1>
+
       <EmployeeList employee={loadedEmployees} />
     </section>
   );

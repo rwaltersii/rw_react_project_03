@@ -4,8 +4,7 @@ import classes from "./MainNavigation.module.css";
 function MainNavigation() {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>LiveLive Production Reporting</div>
-
+      <div className={classes.logo}>LiveLine Production Reporting</div>
       <nav>
         <ul>
           <li>

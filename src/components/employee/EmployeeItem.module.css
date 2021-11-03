@@ -1,13 +1,11 @@
 .item {
-  margin: 1rem 0;
+  margin: 0.2rem;
 }
 
 .image {
   margin: auto;
-  display: block;
-  width: 25%;
-  height: 20rem;
-  overflow: hidden;
+  width: 40%;
+  height: 5rem;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
 }
@@ -20,28 +18,35 @@
 .content {
   text-align: center;
   padding: 1rem;
+  padding-top: 20px;
+  padding-bottom: 0px;
 }
 
 .content h3 {
   display: inline;
   font-size: 1.25rem;
   color: #2c292b;
+  padding-top: 20px;
+  padding-bottom: 0px;
 }
 
 .actions {
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .actions button {
   font: inherit;
   cursor: pointer;
-  color: #00539f;
-  border: 1px solid #00539f;
-  background-color: transparent;
-  padding: 0.5rem 1.5rem;
+  color: white;
+  border: 1px solid transparent;
+  background-color: #00539f;
+  padding: 0.5rem 0.9rem;
   border-radius: 4px;
   margin: 5px;
+  font-weight: bold;
 }
 
 .actions button:hover,
