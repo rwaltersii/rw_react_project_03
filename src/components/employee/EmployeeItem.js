@@ -15,6 +15,7 @@ function EmployeeItem(props) {
           <p>{props.position}</p>
         </div>
         <div className={classes.actions}>
+          {/* If the ADD button is clicked...open the Backdrop */}
           <button>Add</button>
           <button>Edit</button>
           <button>Remove</button>
